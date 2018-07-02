@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#0099cc"
+    tools:context="com.example.ferri.cityzen.IntroActivity">
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/fullscreen_content_controls"
+                style="?metaButtonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@color/white"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_weight="0"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:src="@drawable/logo_small" />
+
+                <com.synnapps.carouselview.CarouselView
+                    android:id="@+id/carouselView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:disableAutoPlayOnUserInteraction="true"
+                    app:fillColor="@color/colorPrimary"
+                    app:pageColor="@color/colorGray"
+                    app:radius="4dp"
+                    app:slideInterval="3000"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="0dp" />
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"></LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="32dp"
+                        android:backgroundTint="@color/colorPrimaryLight"
+                        android:padding="24dp"
+                        android:stateListAnimator="@null"
+                        android:text="Empezar"
+                        android:textAllCaps="false"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorPrimaryDark" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="230dp"
+                android:src="@drawable/intro_shadow" />
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</FrameLayout>

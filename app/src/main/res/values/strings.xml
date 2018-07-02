@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Cityzen</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="intro_badpark_title">Ayuda a mejorar tu ciudad</string>
+    <string name="intro_badpark_text">Notifica vehículos mal estacionados en tu ciudad de forma sencilla y confidencial y gana dinero.</string>
+    <string name="intro_lovecars_title">Reduce el número de accidentes</string>
+    <string name="intro_lovecars_text">Usa la app y ayuda a reducir el númeoro de accidentes en tu ciudad de forma muy efectiva</string>
+    <string name="intro_hangcars_title">Historial</string>
+    <string name="intro_hangcars_text">Consulta tu historial de notificaciones enviadas y el estado de cada una. La información es confidencial.</string>
+    <string name="intro_money_title">Wallet</string>
+    <string name="intro_money_text">Consulta en cualquier momento tus ingresos desde tu perfil.</string>
+</resources>
